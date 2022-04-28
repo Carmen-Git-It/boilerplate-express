@@ -23,7 +23,7 @@ app.get("/now", (req, res, next) => {
     next();
 }, (req, res) =>
 {
-    res.send({"time": res.time});
+    res.send({"time": req.time});
 });
 
 
